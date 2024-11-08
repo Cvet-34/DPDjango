@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} МАГАЗИН ТОВАРОВ ДЛЯ ЗДОРОВЬЯ "БРУСНИКА"{% endblock %}</title>
+    <link rel = 'stylesheet' type="text/css" href = '{% static style.css %}'>
+</head>
+<body>
+    <pivetctvie>
+        {% block pivetctvie %}
+            <h1>{{text}}</h1>
+            <h2>Природные товары для вас.</h2>
+            <h3>Польза и красота от природы.</h3>
+            <p>Подбираем только качественные товары для вас.</p>
+        {% endblock %}
+    </pivetctvie>
+
+    <ul>
+        <menu>
+            {% block menu %}
+                <a href="#">Магазин</a>
+            <li> Каталог</li>
+                <a href='http://127.0.0.1:8000/nametov/'>Масла</a>
+            <li> </li>
+                <a href='http://127.0.0.1:8000/nametov/'>Мази</a>
+            <li> </li>
+                <a href='http://127.0.0.1:8000/nametov/'>Чаи</a>
+            <li> </li>
+                <a href='http://127.0.0.1:8000/carzina/'>КАРЗИНА</a>
+            {% endblock %}
+        </menu>>
+    </ul>
+
+    <content>
+        {% block content %}
+        <p>Тут будет название блока</p>>
+            <li> БЫСТРОЕ ОФОРМЛЕНИЕ</li>
+            <li> ВЫСОКОЕ КАЧЕСТВО ПРОДУКЦИ</li>
+            <li> БЫСТРАЯ ДОСТАВКА </li>
+        {% endblock %}
+    </content>>
+
+    <section>
+        {% block section %}
+        <ul>
+            {% for i in list %}
+            <li>{{ i|title }}</li>
+            {% endfor %}
+        </ul>
+        {% endblock section%}
+    </section>
+    <info>
+        {% block info %}
+        {% include 'info.html' %}
+        {% endblock %}
+    </info>
+</body>
+</html>
