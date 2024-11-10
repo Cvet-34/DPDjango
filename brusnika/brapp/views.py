@@ -1,4 +1,3 @@
-
 from django.shortcuts import render
 from .forms import UserRegister
 from django.http import HttpResponse
@@ -7,13 +6,9 @@ import webbrowser
 
 # Create your views here.
 def menu(request):
-    text = 'Природные товары для красоты издоровья!'
-    list = ['надежная упаковка', 'высокое качество продукции', 'вся продукция сертифицирована']
-    context = {
-        'text': text,
-        'list': list
-        }
-    return render(request, 'menu.html', context)
+    return render(request, 'menu.html')
+
+
 
 
 def infoobshee(request):
@@ -26,8 +21,6 @@ def nametov(request):
         'title': title,
     }
     return render(request, 'nametov.html', context)
-
-
 
 def registration_page(request):
 

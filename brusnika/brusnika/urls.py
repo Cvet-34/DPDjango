@@ -17,8 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from brapp.views import infoobshee, nametov, registration_page
-#from task4.views import games, platform
+
 from django.views.generic import TemplateView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,7 +27,10 @@ urlpatterns = [
     path('infoobshee/', infoobshee),
     path('nametov/', nametov),
     path('carzina/', TemplateView.as_view(template_name='carzina.html')),
-
-
+    path('len/', TemplateView.as_view(template_name='katalog tov/len.html')),
+    path('cmolka/', TemplateView.as_view(template_name='katalog tov/cmolka.html')),
+    path('chai/', TemplateView.as_view(template_name='katalog tov/chai.html')),
+    path('vodaprop/', TemplateView.as_view(template_name='katalog tov/vodaprop.html')),
+    path('bronxo/', TemplateView.as_view(template_name='katalog tov/bronxo.html')),
 ]
 

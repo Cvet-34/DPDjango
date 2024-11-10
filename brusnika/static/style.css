@@ -1,4 +1,61 @@
 body {
-    background-color: red;
+    font-family: Monaco, monospace;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    background-color: green;
+    text-align: center;
+}
 
+header {
+    background-color: brown;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    background-color: brown;
+    color: #fff;
+    text-align: center;
+    padding: 0em 0;
+    position: moving;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+info {
+    padding: 1em;
+}
+
+section {
+   list-style-type: none;
+    padding: 0;
+    background-color: pink;
+    overflow: hidden;
+    text-align: center;
+}
+
+cars {
+    background-color: brown;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
 }
