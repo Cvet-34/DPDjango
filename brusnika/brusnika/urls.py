@@ -27,7 +27,7 @@ urlpatterns = [
     path('infoobshee/', infoobshee),
     path('nametov/', nametov),
     path('carzina/', TemplateView.as_view(template_name='carzina.html')),
-    path('len/', TemplateView.as_view(template_name='katalog tov/len.html')),
+    path('lenm/', TemplateView.as_view(template_name='katalog tov/lenm.html')),
     path('cmolka/', TemplateView.as_view(template_name='katalog tov/cmolka.html')),
     path('chai/', TemplateView.as_view(template_name='katalog tov/chai.html')),
     path('vodaprop/', TemplateView.as_view(template_name='katalog tov/vodaprop.html')),

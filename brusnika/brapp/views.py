@@ -8,19 +8,22 @@ import webbrowser
 def menu(request):
     return render(request, 'menu.html')
 
-
-
-
 def infoobshee(request):
     return render(request, 'infoobshee.html')
 
 
-def nametov(request):
-    title = 'КАТОЛОГ ТОВАРОВ'
+def carzina(request):
+
+    #list_= ["bronxo.html", "chai.html", "cmolka.html", "lenm.html", "vodaprop.html"]
+    list_ = ["qq", "fff", "yyyyy"]
     context = {
-        'title': title,
+       'list_': list_,
     }
-    return render(request, 'nametov.html', context)
+    return render(request, 'carzina.html', context)
+
+
+def nametov(request):
+    return render(request, 'nametov.html')
 
 def registration_page(request):
 
