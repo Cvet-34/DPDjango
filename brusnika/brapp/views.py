@@ -11,15 +11,8 @@ def menu(request):
 def infoobshee(request):
     return render(request, 'infoobshee.html')
 
-
 def carzina(request):
-
-    #list_= ["bronxo.html", "chai.html", "cmolka.html", "lenm.html", "vodaprop.html"]
-    list_ = ["qq", "fff", "yyyyy"]
-    context = {
-       'list_': list_,
-    }
-    return render(request, 'carzina.html', context)
+    return render(request, 'carzina.html')
 
 
 def nametov(request):
